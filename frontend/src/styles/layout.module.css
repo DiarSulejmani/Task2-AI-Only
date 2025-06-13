@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #282c34;
+  color: #fff;
+}
+.header ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+}

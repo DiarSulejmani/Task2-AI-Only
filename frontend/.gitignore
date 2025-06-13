@@ -1,0 +1,24 @@
+# Ignore Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+random/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode workspace settings
+.vscode/
+
+# macOS metadata
+.DS_Store
+
+# Node modules (if you’re also using npm)
+node_modules/
+
+# Next.js build output
+.next/
+out/
+.env
