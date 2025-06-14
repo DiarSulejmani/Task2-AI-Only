@@ -2,7 +2,12 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ModuleNotFoundError:  # pragma: no cover - optional dependency
+    def load_dotenv() -> None:
+        """Fallback no-op when python-dotenv isn't installed."""
+        return None
 
 # Load environment variables from `.env` if present
 load_dotenv()
